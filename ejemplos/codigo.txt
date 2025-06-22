@@ -1,0 +1,39 @@
+declaration isBegin
+    int cont ;
+    int sum ;
+    float dec ;
+end 
+
+function IMPRIMIR isBegin
+    print cont ;
+    print sum ;
+end
+
+function ASIGNA isBegin
+    cont = 2 ;
+    sum = 0 ;
+end
+
+function SUMATORIA isBegin
+    ASIGNA () ;
+    IMPRIMIR () ;
+    for 1 : 6 then
+        sum = sum + cont ;
+        cont = cont + 1 ;
+    end
+end
+
+main isBegin
+    cont = 0 ;
+    sum = 0 ;
+    IMPRIMIR () ;
+    if sum < 5 then
+        dec = ( 10 + 1 ) / 2 ;
+    end
+    SUMATORIA () ;
+    if sum > 5 then
+        dec =  10 + 1 / 2 - 3 * 2 ;
+        print dec ;
+    end
+    IMPRIMIR () ;
+end 
